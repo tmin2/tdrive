@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <audio id="bgm" loop>
+  <audio id="bgm" controls loop>
     <source src="free_sunset.mp3" type="audio/mpeg">
     브라우저가 오디오를 지원하지 않습니다.
   </audio>
 
   <script>
-    // 첫 터치 이벤트에서 음악 재생
     document.body.addEventListener('touchstart', function() {
       const audio = document.getElementById('bgm');
       audio.play();
-    }, { once: true }); // 한 번만 실행
+    }, { once: true });
   </script>
 </body>
 </html>
-
