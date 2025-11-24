@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <audio autoplay controls muted loop>
+  <button onclick="document.getElementById('bgm').muted=false;">소리 켜기</button>
+  <audio id="bgm" autoplay muted loop>
     <source src="free_sunset.mp3" type="audio/mpeg">
-    브라우저가 오디오를 지원하지 않습니다.
   </audio>
 </body>
 </html>
-
